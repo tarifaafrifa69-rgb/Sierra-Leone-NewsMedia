@@ -1,0 +1,181 @@
+body { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222 ;
+    line-height: 1.6 ;
+} 
+header {
+background: #12355b;
+color: white;
+text-align: center;
+padding: 30px
+}
+header h1 {
+    font-size: 42px ;
+    letter-spacing: 20px ;
+    margin-bottom: 5px ;
+}
+header p {
+    font-size: 16px ;
+}
+nav {
+background-color: #222;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding: 15px ; 
+text-align:center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold ;
+    padding: 15px 18px ;
+    transition: background-color 0.3s ease ;
+}
+nav a:hover {
+    background-color: #e63946 ;
+}
+nav a.active {
+    background-color: #e63946 ;
+}
+ Latest-news {
+    background-color: #f4f4f4;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+}
+latest-label {
+    background-color: #222;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-right: 15px ;
+    white-space: nowrap ;
+}
+latest-text {
+    font-size: 15px;
+}
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+main-news img {
+    width: 100px;
+    height: auto;
+}
+main-news h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+news-article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+news-article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+date {
+    color: #777;
+    font-size: 14px
+}
+about-section {
+    background-color: #f2f2f2;
+    padding: 25px;
+    margin-top: 30px;
+}
+about-section h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+about-section h2 {
+    color: #12355b;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+about-section p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+contact-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px} 
+    contact-info,
+    contact-form{
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba (0, 0, 0.80);}
+contact-info h2,
+contact-form h2 {
+    margin-bottom: 20px;
+    color: #12355b;
+}
+contact-info p { margin-bottom: 15px;}
+contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+contact-form input,
+contact-form textarea,
+contact-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 15px;}
+    Contact-form textarea {
+        height: 150px;
+        resize: vertical;
+    }
+
+footer {
+    background-color: #222 ;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+@media (max-width: 900pw) { 
+ news-grid { grid-template-columns: repeat (2, 1fr); }
+ category-grid { grid-template-columns: repeat (2, 1fr);}
+ category-grid { grid-template-columns: repeat (2, 1fr);}
+ contact-container { grid-template-columns : 1fr;}
+ footer-container { grid-template-columns: 1fr 1fr;} }
+
+ @media (max-width: 600px) {
+    header { padding: 20px 10px;}
+    header h1 { font-size : 30px}
+    nav { display: block; }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+    latest-news { display: block; text-align: center;}
+ breaking-label { display: inline-block; margin-bottom: 5px; margin-right: 0px; }
+ container { padding: 20px 12px;}
+ hero-main img { height: 250px;}
+ hero-content h2 { font-size : 26px;}
+   article { padding: 20px;}
+   article h1 { font-size: 30px;}
+   article-introduction { font-size: 30px;}
+   article p { font-size: 16px;}
+   about-section { padding: 25px;}
+   about-section h1 { font-size : 30px;}
+   footer-container { grid-template-columns : 1fr;
+text-align: center;}
+}
